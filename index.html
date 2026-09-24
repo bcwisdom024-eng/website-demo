@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nwogbe Onyinyechi Victoria Data Analyst Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #f8f9fa;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar { background-color: rgba(18, 18, 18, 0.95) !important; backdrop-filter: blur(10px); }
+        .navbar-brand { font-weight: 700; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        .typed-text { color: var(--primary-color); font-weight: bold; }
+
+        /* Cards */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: var(--text-light);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+        }
+        
+        /* Badges */
+        .skill-badge { font-size: 0.9rem; margin: 5px; padding: 8px 15px; }
+        
+        /* Custom Button */
+        .btn-custom { border-radius: 30px; padding: 10px 25px; text-transform: uppercase; font-size: 0.85rem; font-weight: 600; }
+        
+        /* File Type Icons */
+        .file-icon { font-size: 2rem; margin-bottom: 15px; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DATA<span class="text-primary">PRO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="display-3 fw-bold mb-3">Hi, I'm Nwogbe Onyinyechi Victoria</h1>
+            
+            <h3 class="mb-4">I specialize in <span class="typed-text"></span></h3>
+            <p class="lead mb-5 text-secondary">Transforming complex datasets into actionable business intelligence.</p>
+            <a href="#projects" class="btn btn-primary btn-custom me-2"><i class="fas fa-folder-open me-2"></i>View Work</a>
+            <a href="assets/pdf/Onyin_Resume.pdf" target="_blank" class="btn btn-outline-light btn-custom"><i class="fas fa-file-pdf me-2"></i>Download CV</a>        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section class="py-5" id="about">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="fw-bold mb-4">About Me</h2>
+                    <img src="assets/images/profile.jpg" alt="My Profile Picture" class="rounded-circle mb-4 shadow" style="width: 180px; height: 180px; object-fit: cover; border: 4px solid #0d6efd;">
+
+                    <p class="text-secondary lh-lg">
+                        I am a dedicated Business Data Analyst and IT Consultant with a passion for extracting insights from raw data. 
+                        With expertise spanning data processing, visualization, and strategic reporting, I bridge the gap between technical data analysis and actionable business strategy. I also have a strong background in developing instructional training curricula and managing comprehensive IT services.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" id="skills">
+                    <h2 class="fw-bold mb-4">Core Competencies</h2>
+                    <div>
+                        <span class="badge bg-primary skill-badge">Data Analysis</span>
+                        <span class="badge bg-primary skill-badge">Python</span>
+                        <span class="badge bg-primary skill-badge">SQL</span>
+                        <span class="badge bg-primary skill-badge">Power BI</span>
+                        <span class="badge bg-primary skill-badge">Microsoft Excel</span>
+                        <span class="badge bg-secondary skill-badge">IT Consulting</span>
+                        <span class="badge bg-secondary skill-badge">Business Meeting Training</span>
+                        <span class="badge bg-secondary skill-badge">Business Model Design</span>
+                        <span class="badge bg-secondary skill-badge">Document Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Section -->
+<section class="py-5 bg-dark" id="projects">
+    <div class="container mt-5">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Featured Projects</h2>
+        
+        <!-- Added justify-content-center so the 5th card sits nicely in the middle -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- NEW: Excel Project -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 p-4 text-center">
+                    <!-- Using a green color (text-success) to match Excel branding -->
+                    <i class="fas fa-file-excel file-icon text-success"></i>
+                    <h5 class="card-title">Financial Data Tracking</h5>
+                    <p class="card-text text-secondary small">Advanced data modeling using Pivot Tables, VLOOKUPs, and Power Query.</p>
+                    <div class="mt-auto">
+                        <a href="assets/excel/mfm.xlsx" class="btn btn-outline-success btn-sm w-100" download>Download .xlsx</a>
+                        <a href="assets/excel/financial_tracker.xlsx" class="btn btn-outline-success btn-sm w-100" download>Download .xlsx</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Power BI Project -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 p-4 text-center">
+                    <i class="fas fa-chart-bar file-icon"></i>
+                    <h5 class="card-title">Sales Dashboard</h5>
+                    <p class="card-text text-secondary small">Interactive Power BI dashboard for retail analytics.</p>
+                    <div class="mt-auto">
+                        <a href="assets/pbix/Sales_Dashboard.pbix" class="btn btn-outline-primary btn-sm w-100 mb-2" download>Download .pbix</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Project -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 p-4 text-center">
+                    <i class="fab fa-python file-icon"></i>
+                    <h5 class="card-title">Data Cleaning</h5>
+                    <p class="card-text text-secondary small">Automated data wrangling script using Pandas.</p>
+                    <div class="mt-auto">
+                        <a href="assets/python/cleaning_script.py" class="btn btn-outline-primary btn-sm w-100 mb-2" download>Download .py</a>
+                        <a href="assets/python/notebook.html" class="btn btn-outline-secondary btn-sm w-100" target="_blank">View Notebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SQL Project -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 p-4 text-center">
+                    <i class="fas fa-database file-icon"></i>
+                    <h5 class="card-title">Database Querying</h5>
+                    <p class="card-text text-secondary small">Complex SQL queries for financial report extraction.</p>
+                    <div class="mt-auto">
+                        <a href="assets/sql/queries.sql" class="btn btn-outline-primary btn-sm w-100" download>Download .sql</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF Project -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 p-4 text-center">
+                    <i class="fas fa-file-pdf file-icon text-danger"></i>
+                    <h5 class="card-title">Market Report</h5>
+                    <p class="card-text text-secondary small">Comprehensive PDF report with executive summaries.</p>
+                    <div class="mt-auto">
+                        <a href="assets/pdf/The_Chief_of_Staff_to_the_President.pdf" class="btn btn-outline-danger btn-sm w-100" target="_blank">View PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+</section>
+    <!-- Footer / Contact -->
+    <footer class="py-5 text-center" id="contact" style="background-color: #0a0a0a;">
+        <div class="container" data-aos="zoom-in">
+            <h3 class="fw-bold mb-4">Let's Connect</h3>
+            <div class="mb-4">
+                <a href="mailto:victorianwogbe2017@gmail.com" class="text-light me-3 fs-4" title="Email Me"><i class="fas fa-envelope"></i></a>               
+                <a href="https://www.linkedin.com/in/onyinyechi-nwogbe-92565125b" target="_blank" class="text-light me-3 fs-4" title="Connect on LinkedIn"><i class="fab fa-linkedin"></i></a>                
+                <a href="https://github.com/bcwisdom024-eng" target="_blank" class="text-light fs-4" title="My GitHub"><i class="fab fa-github"></i></a>
+
+            </div>
+            <p class="text-secondary small">&copy; 2026 Nwogbe Onyinyechi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed.js for typing animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script>
+        // Initialize Scroll Animations
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Typing Effect
+        var typed = new Typed('.typed-text', {
+            strings: ['Data Visualization', 'SQL Database Management', 'Python Programming', 'IT Consulting'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+    </script>
+</body>
+</html>
